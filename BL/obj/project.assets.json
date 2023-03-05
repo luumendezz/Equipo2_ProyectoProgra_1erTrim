@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ET/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ET.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ET.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ET/1.0.0": {
+      "type": "project",
+      "path": "../ET/ET.csproj",
+      "msbuildProject": "../ET/ET.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ET >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\marti\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj": {
+              "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
