@@ -2,12 +2,12 @@
 {
     public class Libro : Producto
     {
-        private uint idAutor;
-        private uint idIdioma;
-        private uint cantidadPaginas;
+        private uint _idAutor;
+        private uint _idIdioma;
+        private uint _cantidadPaginas;
 
-        public uint IdAutor { get => idAutor; set => idAutor = value; }
-        public uint IdIdioma { get => idIdioma; set => idIdioma = value; }
-        public uint CantidadPaginas { get => cantidadPaginas; set => cantidadPaginas = value; }
+        public uint IdAutor { get => _idAutor; set => _idAutor = value; }
+        public uint IdIdioma { get => _idIdioma; set => _idIdioma = value; }
+        public uint CantidadPaginas { get => _cantidadPaginas; set => _cantidadPaginas = value; }
     }
 }

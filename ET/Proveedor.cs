@@ -2,16 +2,16 @@
 {
     public class Proveedor
     {
-        private uint id;
-        private string descripcion;
-        private bool esEditorial;
-        private string email;
-        private string telefono;
+        private uint _id;
+        private string _descripcion;
+        private bool _esEditorial;
+        private string _email;
+        private string _telefono;
 
-        public uint Id { get => id; set => id = value; }
-        public string Descripcion { get => descripcion; set => descripcion = value; }
-        public bool EsEditorial { get => esEditorial; set => esEditorial = value; }
-        public string Email { get => email; set => email = value; }
-        public string Telefono { get => telefono; set => telefono = value; }
+        public uint Id { get => _id; set => _id = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
+        public bool EsEditorial { get => _esEditorial; set => _esEditorial = value; }
+        public string Email { get => _email; set => _email = value; }
+        public string Telefono { get => _telefono; set => _telefono = value; }
     }
 }

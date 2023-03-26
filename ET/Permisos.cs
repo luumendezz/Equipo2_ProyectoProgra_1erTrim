@@ -2,12 +2,12 @@
 {
     public class Permisos
     {
-        private uint id;
-        private uint idRol;
-        private uint idModulo;
+        private uint _id;
+        private uint _idRol;
+        private uint _idModulo;
 
-        public uint Id { get => id; set => id = value; }
-        public uint IdRol { get => idRol; set => idRol = value; }
-        public uint IdModulo { get => idModulo; set => idModulo = value; }
+        public uint Id { get => _id; set => _id = value; }
+        public uint IdRol { get => _idRol; set => _idRol = value; }
+        public uint IdModulo { get => _idModulo; set => _idModulo = value; }
     }
 }

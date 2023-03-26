@@ -2,14 +2,14 @@
 {
     public class DetalleEntrada
     {
-        private uint id;
-        private uint idEntrada;
-        private uint idProducto;
-        private uint idCantidad;
+        private uint _id;
+        private uint _idEntrada;
+        private uint _idProducto;
+        private uint _idCantidad;
 
-        public uint Id { get => id; set => id = value; }
-        public uint IdEntrada { get => idEntrada; set => idEntrada = value; }
-        public uint IdProducto { get => idProducto; set => idProducto = value; }
-        public uint IdCantidad { get => idCantidad; set => idCantidad = value; }
+        public uint Id { get => _id; set => _id = value; }
+        public uint IdEntrada { get => _idEntrada; set => _idEntrada = value; }
+        public uint IdProducto { get => _idProducto; set => _idProducto = value; }
+        public uint IdCantidad { get => _idCantidad; set => _idCantidad = value; }
     }
 }

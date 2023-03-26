@@ -2,12 +2,12 @@
 {
     public class Autor
     {
-        private uint id;
-        private string nombre;
-        private string apellidos;
+        private uint _id;
+        private string _nombre;
+        private string _apellidos;
 
-        public uint Id { get => id; set => id = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Apellidos { get => apellidos; set => apellidos = value; }
+        public uint Id { get => _id; set => _id = value; }
+        public string Nombre { get => _nombre; set => _nombre = value; }
+        public string Apellidos { get => _apellidos; set => _apellidos = value; }
     }
 }

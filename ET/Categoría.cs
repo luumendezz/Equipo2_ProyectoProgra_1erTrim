@@ -2,12 +2,12 @@
 {
     public class Categoría
     {
-        private uint id;
-        private string descripcion;
-        private bool esGeneroLiterario;
+        private uint _id;
+        private string _descripcion;
+        private bool _esGeneroLiterario;
 
-        public uint Id { get => id; set => id = value; }
-        public string Descripcion { get => descripcion; set => descripcion = value; }
-        public bool EsGeneroLiterario { get => esGeneroLiterario; set => esGeneroLiterario = value; }
+        public uint Id { get => _id; set => _id = value; }
+        public string Descripcion { get => _descripcion; set => _descripcion = value; }
+        public bool EsGeneroLiterario { get => _esGeneroLiterario; set => _esGeneroLiterario = value; }
     }
 }
