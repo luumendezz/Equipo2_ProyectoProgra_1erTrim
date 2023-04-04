@@ -8,9 +8,9 @@ namespace BL
 {
     public class AutorBL
     {
+        AutorDAL dal = new AutorDAL();
         public bool IngresarAutor(Autor autor)
         {
-            AutorDAL dal = new AutorDAL();
             /* Instancia dos Datatable que buscan el nombre y apellido en DAL */
             DataTable validacionNombre = dal.BuscarAutorNombre(autor.Nombre);
             DataTable validacionApellido = dal.BuscarAutorApellido(autor.Apellidos);
@@ -31,22 +31,18 @@ namespace BL
         }
         public bool ActualizarAutor(Autor autor)
         {
-            AutorDAL dal = new AutorDAL();
             return dal.ActualizarAutor(autor);
         }
         public bool BorrarAutor(int idAut)
         {
-            AutorDAL dal = new AutorDAL();
             return dal.BorrarAutor(idAut);
         }
         public DataTable BuscarAutorNombre(string nombre) 
         {
-            AutorDAL dal = new AutorDAL();
             return dal.BuscarAutorNombre(nombre);
         }
         public DataTable BuscarAutorApellido(string apellido)
         {
-            AutorDAL dal = new AutorDAL();
             return dal.BuscarAutorApellido(apellido);
         }
     }

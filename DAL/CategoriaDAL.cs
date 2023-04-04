@@ -61,7 +61,7 @@ namespace DAL
             }
             return retVal;
         }
-        public bool BorrrarCategoria(int idCat)
+        public bool BorrarCategoria(int idCat)
         {
             bool retVal = false;
             using (var cn = GetConnection())
@@ -87,7 +87,7 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BorrarCategoria(int idCat)
+        public DataTable BuscarTodoCategoria()
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -99,6 +99,30 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        reader.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            return retVal;
+        }
+        public DataTable BuscarCategoria(int id)
+        {
+            DataTable retVal = new DataTable();
+            using (var cn = GetConnection())
+            {
+                try
+                {
+                    cn.Open();
+                    using (var cmd = new SqlCommand("SpBusquedaCategoriaID", cn))
+                    {
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add(new SqlParameter("@id", id));
                         SqlDataReader reader = cmd.ExecuteReader();
                         reader.Close();
                     }
