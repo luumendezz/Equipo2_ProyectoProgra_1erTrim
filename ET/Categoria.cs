@@ -1,6 +1,6 @@
 ﻿namespace ET
 {
-    public class Categoría
+    public class Categoria
     {
         private uint _id;
         private string _descripcion;

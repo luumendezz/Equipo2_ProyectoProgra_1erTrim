@@ -10,3 +10,8 @@ C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\obj\Deb
 C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\obj\Debug\net6.0\refint\BL.dll
 C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\obj\Debug\net6.0\BL.pdb
 C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\obj\Debug\net6.0\ref\BL.dll
+C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\bin\Debug\net6.0\DAL.dll
+C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\bin\Debug\net6.0\ET.dll
+C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\bin\Debug\net6.0\DAL.pdb
+C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\bin\Debug\net6.0\ET.pdb
+C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\BL\obj\Debug\net6.0\BL.csproj.CopyComplete
