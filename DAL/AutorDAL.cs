@@ -48,7 +48,6 @@ namespace DAL
                         cmd.Parameters.Add(new SqlParameter("@nom", autor.Nombre));
                         cmd.Parameters.Add(new SqlParameter("@ap", autor.Apellidos));
                         cmd.Parameters.Add(new SqlParameter("@idAut", Convert.ToInt32(autor.Id)));
-                        
                         SqlDataReader reader = cmd.ExecuteReader();
                         reader.Close();
                         retVal = true;

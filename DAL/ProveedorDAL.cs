@@ -67,7 +67,7 @@ namespace DAL
             }
             return retVal;
         }
-        public bool BorrarProveedor(int id¿)
+        public bool BorrarProveedor(int id)
         {
             bool retVal = false;
             using (var cn = GetConnection())
@@ -105,8 +105,9 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        reader.Close();
+                        SqlDataAdapter da = new SqlDataAdapter();
+                        da.SelectCommand = cmd;
+                        da.Fill(retVal);
                     }
                 }
                 catch (Exception ex)
@@ -129,8 +130,9 @@ namespace DAL
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.Add(new SqlParameter("@idProv", id));
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        reader.Close();
+                        SqlDataAdapter da = new SqlDataAdapter();
+                        da.SelectCommand = cmd;
+                        da.Fill(retVal);
                     }
                 }
                 catch (Exception ex)
