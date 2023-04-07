@@ -42,7 +42,7 @@ namespace DAL
             }
             return retVal;
         }
-        //Borra únicamente un detalle
+        //Borra únicamente un detalle 
         public bool BorrarDetalle(int id)
         {
             bool retVal = false;
