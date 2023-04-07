@@ -1,5 +1,7 @@
 using ET;
 using BL;
+using DAL;
+
 namespace Proyecto1erTrimestreProgramacion_Equipo2
 {
     internal static class Program
@@ -14,6 +16,10 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
             // see https://aka.ms/applicationconfiguration.
             //ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
+
+            /* Probar el DAL desde aquí
+             * Borrar el using DAL; cuando se termine de probar
+             */
             Autor autor = new Autor();
             autor.Nombre = "Gabriel";
             autor.Apellidos = "Martinez";
