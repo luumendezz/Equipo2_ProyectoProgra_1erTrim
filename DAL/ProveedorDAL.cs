@@ -1,7 +1,5 @@
-﻿using System.ComponentModel;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using DAL;
 using ET;
 
 namespace DAL
