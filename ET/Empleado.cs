@@ -10,7 +10,7 @@
         private string _email;
         private uint _idRol;
         private bool _empleadoVigente;
-
+ 
         public uint Id { get => _id; set => _id = value; }
         public string Cedula { get => _cedula; set => _cedula = value; }
         public string NombreCompleto { get => _nombreCompleto; set => _nombreCompleto = value; }
