@@ -23,6 +23,7 @@ namespace DAL
                         cmd.Parameters.Add(new SqlParameter("@contra", empleado.Contrasena));
                         cmd.Parameters.Add(new SqlParameter("@numero", empleado.NumeroTelefonico));
                         cmd.Parameters.Add(new SqlParameter("@email", empleado.Email));
+                        //Entero sin signo -> Entero estándar 32 bits
                         cmd.Parameters.Add(new SqlParameter("@idRol", Convert.ToInt32(empleado.IdRol)));
                         SqlDataReader reader = cmd.ExecuteReader();
                         reader.Close();
@@ -49,6 +50,7 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
+                        //Entero sin signo -> Entero estándar de 32 bits linea(s) 54 & 60
                         cmd.Parameters.Add(new SqlParameter("@idEmpleadoMod", Convert.ToInt32(empleado.Id)));
                         cmd.Parameters.Add(new SqlParameter("@idCedula", empleado.Cedula));
                         cmd.Parameters.Add(new SqlParameter("@nombre", empleado.NombreCompleto));

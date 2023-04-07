@@ -25,6 +25,12 @@ namespace DAL
                         {
                             cmd.Connection = cn;
                             cmd.CommandType = CommandType.StoredProcedure;
+                            /*
+                             * Parámetros
+                             * Convierte de uint (Unsigned Integer) a Int para BD
+                             * metodo Convert.ToInt32() [32 bits, entero estándar]
+                             * Gabriel J.
+                             */
                             cmd.Parameters.Add(new SqlParameter("@rol", Convert.ToInt32(p.IdRol)));
                             cmd.Parameters.Add(new SqlParameter("@idMod", Convert.ToInt32(p.IdModulo)));
                             SqlDataReader reader = cmd.ExecuteReader();
@@ -60,6 +66,12 @@ namespace DAL
                         {
                             cmd.Connection = cn;
                             cmd.CommandType = CommandType.StoredProcedure;
+                            /*
+                             * Parámetros
+                             * Convierte de uint (Unsigned Integer) a Int para BD
+                             * metodo Convert.ToInt32() [32 bits, entero estándar]
+                             * Gabriel J.
+                             */
                             cmd.Parameters.Add(new SqlParameter("@rol", Convert.ToInt32(p.IdRol)));
                             cmd.Parameters.Add(new SqlParameter("@idMod", Convert.ToInt32(p.IdModulo)));
                             cmd.Parameters.Add(new SqlParameter("@idPerm", Convert.ToInt32(p.Id)));
@@ -103,6 +115,7 @@ namespace DAL
             }
             return retVal;
         }
+        //Busca los modulos asociados a un rol de usuario
         public DataTable BuscarPermisoRol(int idRol)
         {
             DataTable retVal = new DataTable();

@@ -51,6 +51,7 @@ namespace DAL
                         cmd.Parameters.Add(new SqlParameter("@esEditorial", proveedor.EsEditorial));
                         cmd.Parameters.Add(new SqlParameter("@correo", proveedor.Email));
                         cmd.Parameters.Add(new SqlParameter("@numero", proveedor.Telefono));
+                        //Entero sin signo -> Entero estándar 32 bits
                         cmd.Parameters.Add(new SqlParameter("@idProv", Convert.ToInt32(proveedor.Id)));
                         SqlDataReader reader = cmd.ExecuteReader();
                         reader.Close();

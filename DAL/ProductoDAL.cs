@@ -25,6 +25,12 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
+                        /*
+                         * Parámetros
+                         * Convierte de uint (Unsigned Integer) a Int para BD
+                         * metodo Convert.ToInt32() [32 bits, entero estándar]
+                         * Gabriel J.
+                         */
                         cmd.Parameters.Add(new SqlParameter("@descrip", producto.Descripcion));
                         cmd.Parameters.Add(new SqlParameter("@stMinimo", Convert.ToInt32(producto.StockMinimo)));
                         cmd.Parameters.Add(new SqlParameter("@stMaximo", Convert.ToInt32(producto.StockMaximo)));
@@ -56,6 +62,12 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
+                        /*
+                         * Parámetros
+                         * Convierte de uint (Unsigned Integer) a Int para BD
+                         * metodo Convert.ToInt32() [32 bits, entero estándar]
+                         * Gabriel J.
+                         */
                         cmd.Parameters.Add(new SqlParameter("@descrip", producto.Descripcion));
                         cmd.Parameters.Add(new SqlParameter("@stMinimo", Convert.ToInt32(producto.StockMinimo)));
                         cmd.Parameters.Add(new SqlParameter("@stMaximo", Convert.ToInt32(producto.StockMaximo)));

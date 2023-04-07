@@ -45,6 +45,12 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
+                        /*
+                         * Parámetros
+                         * Convierte de uint (Unsigned Integer) a Int para BD
+                         * metodo Convert.ToInt32() [32 bits, entero estándar]
+                         * Gabriel J.
+                         */
                         cmd.Parameters.Add(new SqlParameter("@descripcion", categoria.Descripcion));
                         cmd.Parameters.Add(new SqlParameter("@esGenero", categoria.EsGeneroLiterario));
                         cmd.Parameters.Add(new SqlParameter("@id", Convert.ToInt32(categoria.Id)));
