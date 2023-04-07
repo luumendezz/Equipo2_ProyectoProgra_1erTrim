@@ -7,7 +7,7 @@
         protected uint stockMaximo;
         protected uint stockMinimo;
         protected string descripcion;
-        protected double precio;
+        protected float precio;
         protected bool productoEstudiantil;
 
         public uint Id { get => id; set => id = value; }
@@ -15,7 +15,7 @@
         public uint StockMaximo { get => stockMaximo; set => stockMaximo = value; }
         public uint StockMinimo { get => stockMinimo; set => stockMinimo = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
-        public double Precio { get => precio; set => precio = value; }
+        public float Precio { get => precio; set => precio = value; }
         public bool ProductoEstudiantil { get => productoEstudiantil; set => productoEstudiantil = value; }
     }
 }

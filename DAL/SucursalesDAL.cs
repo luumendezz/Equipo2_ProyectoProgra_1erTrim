@@ -41,7 +41,7 @@ namespace DAL
                 try
                 {
                     cn.Open();
-                    using (var cmd = new SqlCommand("SpIngresarSucursal", cn))
+                    using (var cmd = new SqlCommand("SpActualizarSucursal", cn))
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
@@ -83,6 +83,55 @@ namespace DAL
                 {
                     Console.WriteLine(ex.Message);
                     retVal = false;
+                }
+            }
+            return retVal;
+        }
+        public DataTable BuscarTodoSucursal()
+        {
+            DataTable retVal = new DataTable();
+            using (var cn = GetConnection())
+            {
+                try
+                {
+                    cn.Open();
+                    using (var cmd = new SqlCommand("SpBuscarTodoSucursal", cn))
+                    {
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        SqlDataAdapter da = new SqlDataAdapter();
+                        da.SelectCommand = cmd;
+                        da.Fill(retVal);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            return retVal;
+        }
+        public DataTable BuscarSucursal(int id)
+        {
+            DataTable retVal = new DataTable();
+            using (var cn = GetConnection())
+            {
+                try
+                {
+                    cn.Open();
+                    using (var cmd = new SqlCommand("SpBuscarSucursal", cn))
+                    {
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add(new SqlParameter("@idSuc", id));
+                        SqlDataAdapter da = new SqlDataAdapter();
+                        da.SelectCommand = cmd;
+                        da.Fill(retVal);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
                 }
             }
             return retVal;
