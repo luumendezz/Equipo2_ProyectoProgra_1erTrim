@@ -6,7 +6,6 @@ namespace DAL
 {
     public class DetalleCategoriaDAL : ConnectionToSQL
     {
-        
         public bool IngresarDetallesCategoria(List<DetalleCategoria> ListaCategorias)
         {
             bool retVal = false;

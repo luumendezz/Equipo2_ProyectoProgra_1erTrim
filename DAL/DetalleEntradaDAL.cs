@@ -6,7 +6,7 @@ namespace DAL
 {
     public class DetalleEntradaDAL : ConnectionToSQL
     {
-        public bool IngresarDetallesCategoria(List<DetalleEntrada> ListaDetalles)
+        public bool IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles)
         {
             bool retVal = false;
             /*
@@ -27,11 +27,13 @@ namespace DAL
                             cmd.CommandType = CommandType.StoredProcedure;
                             /*
                              * Parámetros
-                             * Convierte de uint (Unsigned Integer) a Int para BD
+                             * -Convierte de uint (Unsigned Integer) a Int para BD
                              * metodo Convert.ToInt32() [32 bits, entero estándar]
+                             * -ID de entrada es el ultimo ID registrado de un encabezado de entrada, 
+                             * ver metodo privado hasta abajo de la clase
                              * Gabriel J.
                              */
-                            cmd.Parameters.Add(new SqlParameter("@idEnt", Convert.ToInt32(de.IdEntrada)));
+                            cmd.Parameters.Add(new SqlParameter("@idEnt", this.UltimoIdEncabezado()));
                             cmd.Parameters.Add(new SqlParameter("@idProdu", Convert.ToInt32(de.IdProducto)));
                             cmd.Parameters.Add(new SqlParameter("@cant", Convert.ToInt32(de.Cantidad)));
                             SqlDataReader reader = cmd.ExecuteReader();
@@ -48,7 +50,7 @@ namespace DAL
             }
             return retVal;
         }
-        public bool ActualizarDetallesCategoria(List<DetalleEntrada> ListaDetalles)
+        public bool ActualizarDetalleEntrada(List<DetalleEntrada> ListaDetalles)
         {
             bool retVal = false;
             // Comentarios de metodo anterior
@@ -76,6 +78,32 @@ namespace DAL
                         Console.WriteLine(ex.Message);
                         retVal = false;
                     }
+                }
+            }
+            return retVal;
+        }
+        private int UltimoIdEncabezado()
+        {
+            int retVal = -1;
+            using (var cn = GetConnection())
+            {
+                try
+                {
+                    cn.Open();
+                    using (var cmd = new SqlCommand("SpUltimoIdEncabezado", cn))
+                    {
+                        DataTable dt = new DataTable();
+                        cmd.Connection = cn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        SqlDataAdapter da = new SqlDataAdapter();
+                        da.SelectCommand = cmd;
+                        da.Fill(dt);
+                        retVal = Convert.ToInt32(dt.Rows[0]["ID"]);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
                 }
             }
             return retVal;
