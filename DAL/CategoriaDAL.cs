@@ -116,7 +116,7 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BuscarCategoria(int id)
+        public DataTable BuscarCategoria(string descrip)
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -124,11 +124,16 @@ namespace DAL
                 try
                 {
                     cn.Open();
-                    using (var cmd = new SqlCommand("SpBusquedaCategoriaID", cn))
+                    using (var cmd = new SqlCommand("SpBusquedaCategoria", cn))
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add(new SqlParameter("@id", id));
+                        /*
+                         * Parámetros, revisar BD, 
+                         * Utiliza el operador LIKE para buscar coincidencias no exactas
+                         * Debe concatenarse con dos "%" a cada lado para su uso correcto
+                         */
+                        cmd.Parameters.Add(new SqlParameter("@descrip", "%"+descrip+"%"));
                         SqlDataReader reader = cmd.ExecuteReader();
                         reader.Close();
                     }

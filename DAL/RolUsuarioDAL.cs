@@ -109,7 +109,7 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BuscarRolUsuario(int idRol)
+        public DataTable BuscarRolUsuario(string descrip)
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -121,7 +121,7 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add(new SqlParameter("@idRol", idRol));
+                        cmd.Parameters.Add(new SqlParameter("@descrip", "%"+descrip+"%"));
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
                         da.Fill(retVal);

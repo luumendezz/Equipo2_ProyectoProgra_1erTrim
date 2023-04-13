@@ -10,3 +10,15 @@ C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Deb
 C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\refint\ET.dll
 C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.pdb
 C:\Archivos\ArchivosTecnicas\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ref\ET.dll
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\bin\Debug\net6.0\ET.deps.json
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\bin\Debug\net6.0\ET.dll
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\bin\Debug\net6.0\ET.pdb
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.csproj.AssemblyReference.cache
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.GeneratedMSBuildEditorConfig.editorconfig
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.AssemblyInfoInputs.cache
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.AssemblyInfo.cs
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.csproj.CoreCompileInputs.cache
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.dll
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\refint\ET.dll
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ET.pdb
+F:\Proyecto1erTrimestreProgramacion_Equipo2\ET\obj\Debug\net6.0\ref\ET.dll

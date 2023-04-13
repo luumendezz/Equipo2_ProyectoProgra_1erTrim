@@ -192,7 +192,7 @@ namespace DAL
             return retVal;
         }
         //Busca cualquier tipo de producto según un id
-        public DataTable BuscarProducto(int id)
+        public DataTable BuscarProducto(string descrip)
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -203,7 +203,7 @@ namespace DAL
                     using (var cmd = new SqlCommand("SpBuscarProducto", cn))
                     {
                         cmd.Connection = cn;
-                        cmd.Parameters.Add(new SqlParameter("@idProd", id));
+                        cmd.Parameters.Add(new SqlParameter("@descrip", "%"+descrip+"%"));
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
                         da.Fill(retVal);

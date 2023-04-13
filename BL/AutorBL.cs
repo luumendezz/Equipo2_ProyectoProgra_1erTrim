@@ -8,7 +8,7 @@ namespace BL
 {
     public class AutorBL
     {
-        AutorDAL dal = new AutorDAL();
+        private AutorDAL dal = new AutorDAL();
         public bool IngresarAutor(Autor autor)
         {
             /* Instancia dos Datatable que buscan el nombre y apellido en DAL */
@@ -19,7 +19,6 @@ namespace BL
              * En caso de que esto sea 0, significa que no hay resultados
              * Si no hay resultados, se puede guardar, entonces llama al DAL y retorna verdadero
              * Si existen resultados en las busquedas, retorna un falso
-             * FIXME
              */
             if (validacionNombre.Rows.Count == 0 || validacionApellido.Rows.Count == 0)
             {

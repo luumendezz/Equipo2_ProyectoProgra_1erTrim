@@ -7,7 +7,7 @@ namespace BL
 {
     public class ProveedorBL
     {
-        ProveedorDAL dal = new ProveedorDAL();
+        private ProveedorDAL dal = new ProveedorDAL();
 
         public bool IngresarProveedor(Proveedor proveedor)
         {
@@ -25,9 +25,9 @@ namespace BL
         {
             return dal.BuscarTodo();
         }
-        public DataTable BuscarProveedor(int id)
+        public DataTable BuscarProveedor(string descrip)
         {
-            return dal.BuscarProveedor(id);
+            return dal.BuscarProveedor(descrip);
         }
     }
 }

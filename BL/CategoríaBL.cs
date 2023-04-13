@@ -7,7 +7,7 @@ namespace BL
 {
     public class CategoriaBL
     {
-        CategoriaDAL dal = new CategoriaDAL();
+        private CategoriaDAL dal = new CategoriaDAL();
         public bool IngresarCategoria(Categoria categoria)
         {
             return dal.IngresarCategoria(categoria);
@@ -24,9 +24,9 @@ namespace BL
         {
             return dal.BuscarTodoCategoria();
         }
-        public DataTable BuscarCategoria(int id)
+        public DataTable BuscarCategoria(string descrip)
         {
-            return dal.BuscarCategoria(id);
+            return dal.BuscarCategoria(descrip);
         }
     }
 }

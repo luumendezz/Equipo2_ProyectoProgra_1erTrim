@@ -121,7 +121,7 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BuscarEmpleado(int idEmp)
+        public DataTable BuscarEmpleado(string cedula)
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -129,11 +129,16 @@ namespace DAL
                 try
                 {
                     cn.Open();
-                    using (var cmd = new SqlCommand("SpBuscarTodoEmpleado", cn))
+                    using (var cmd = new SqlCommand("SpBuscarEmpleado", cn))
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add(new SqlParameter("@idEmp", idEmp));
+                        /*
+                         * Parámetros, revisar BD, 
+                         * Utiliza el operador LIKE para buscar coincidencias no exactas
+                         * Debe concatenarse con dos "%" a cada lado para su uso correcto
+                         */
+                        cmd.Parameters.Add(new SqlParameter("@ced", "%"+cedula+"%"));
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
                         da.Fill(retVal);

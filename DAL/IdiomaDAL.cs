@@ -59,7 +59,7 @@ namespace DAL
             }
             return retVal;
         }
-        public bool BorrarSucursal(int id)
+        public bool BorrarIdioma(int id)
         {
             bool retVal = false;
             using (var cn = GetConnection())
@@ -109,7 +109,7 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BuscarIdioma(int id)
+        public DataTable BuscarIdioma(string descripcion)
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -121,7 +121,7 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add(new SqlParameter("@idIdi", id));
+                        cmd.Parameters.Add(new SqlParameter("@descrip", "%"+descripcion+"%"));
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
                         da.Fill(retVal);

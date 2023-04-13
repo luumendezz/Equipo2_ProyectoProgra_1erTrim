@@ -116,7 +116,7 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BuscarProveedor(int id)
+        public DataTable BuscarProveedor(string descrip)
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -128,7 +128,7 @@ namespace DAL
                     {
                         cmd.Connection = cn;
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add(new SqlParameter("@idProv", id));
+                        cmd.Parameters.Add(new SqlParameter("@descrip", "%"+descrip+"%"));
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
                         da.Fill(retVal);
