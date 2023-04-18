@@ -22,7 +22,7 @@ namespace DAL
                          * Parámetros
                          * Convierte de uint (Unsigned Integer) a Int para BD
                          * metodo Convert.ToInt32() [32 bits, entero estándar]
-                         * Gabriel J.
+                         * Gabriel J. 
                          */
                         cmd.Parameters.Add(new SqlParameter("@idSuc", Convert.ToInt32(encabezado.IdSucursal)));
                         cmd.Parameters.Add(new SqlParameter("@idEmp", Convert.ToInt32(encabezado.IdEmpleado)));
