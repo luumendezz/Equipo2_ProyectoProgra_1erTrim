@@ -41,7 +41,7 @@ namespace DAL
         }
         public bool ActualizarEntrada(EncabezadoEntrada encabezado)
         {
-            bool retVal = false;
+            bool retVal = false; 
             using (var cn = GetConnection())
             {
                 try

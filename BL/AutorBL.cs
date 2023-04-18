@@ -1,8 +1,6 @@
 ﻿using DAL;
 using ET;
 using System.Data;
-using System.Data.SqlClient;
-using System.Xml.Linq;
 
 namespace BL
 {
@@ -11,22 +9,30 @@ namespace BL
         private AutorDAL dal = new AutorDAL();
         public bool IngresarAutor(Autor autor)
         {
-            /* Instancia dos Datatable que buscan el nombre y apellido en DAL */
-            DataTable validacionNombre = dal.BuscarAutorNombre(autor.Nombre);
-            DataTable validacionApellido = dal.BuscarAutorApellido(autor.Apellidos);
-            /*
-             * Busca en el atributo Rows (Filas) el valor
-             * En caso de que esto sea 0, significa que no hay resultados
-             * Si no hay resultados, se puede guardar, entonces llama al DAL y retorna verdadero
-             * Si existen resultados en las busquedas, retorna un falso
-             */
-            if (validacionNombre.Rows.Count == 0 || validacionApellido.Rows.Count == 0)
+            //Valor de retorno
+            bool retVal = true;
+            /* Instancia una datatable que se llena con los datos existentes en BD */
+            DataTable listaAutores = dal.BuscarTodos();
+            //Variable temporal que guarda los datos a validar
+            //Funciones únicamente de legibilidad, puede ser omitida
+            string descripcion = "";
+            for(int i = 0; i < listaAutores.Rows.Count; i++) 
             {
-                dal.IngresarAutor(autor);
-                return true;
+                //Llena la string de descripcion con la consulta y la compara con el nuevo registro
+                //Si este se encuentra, el valor de retorno es falso
+                descripcion = listaAutores.Rows[i]["NOMBRE"].ToString();
+                //Compara nombre y apellido
+                if (autor.Nombre.Equals(descripcion))
+                    retVal = false;
+                descripcion = listaAutores.Rows[i]["APELLIDOS"].ToString();
+                if (autor.Apellidos.Equals(descripcion))
+                    retVal = false;                
             }
-            else
-                return false;
+            //Si no se encontró, lo que significaría que el valor de retorno es verdadero
+            //registra el dato y retorna el verdadero (a menos que exista una excepción), si no, solo retorna el falso
+            if (retVal)
+                retVal = dal.IngresarAutor(autor);
+            return retVal;
         }
         public bool ActualizarAutor(Autor autor)
         {

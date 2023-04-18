@@ -7,7 +7,7 @@ namespace BL
     public class ProductoBL
     {
         private ProductoDAL dal = new ProductoDAL();
-        public bool IngresarProducto(Producto producto)
+        public bool Ingresar(Producto producto)
         {
             return dal.IngresarProducto(producto);
         }
