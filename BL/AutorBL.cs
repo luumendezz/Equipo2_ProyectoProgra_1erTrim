@@ -9,7 +9,7 @@ namespace BL
         private AutorDAL dal = new AutorDAL();
         public bool IngresarAutor(Autor autor)
         {
-            //Valor de retorno
+            //Valor de retorno 
             bool retVal = true;
             /* Instancia una datatable que se llena con los datos existentes en BD */
             DataTable listaAutores = dal.BuscarTodos();
