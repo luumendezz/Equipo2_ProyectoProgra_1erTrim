@@ -50,7 +50,8 @@ namespace DAL
             }
             return retVal;
         }
-        public bool ActualizarDetalleEntrada(List<DetalleEntrada> ListaDetalles)
+        // !!!! DEPRECADO, NO UTILIZAR !!!!
+        /*public bool ActualizarDetalleEntrada(List<DetalleEntrada> ListaDetalles)
         {
             bool retVal = false;
             // Comentarios de metodo anterior
@@ -81,7 +82,7 @@ namespace DAL
                 }
             }
             return retVal;
-        }
+        }*/
         private int UltimoIdEncabezado()
         {
             int retVal = -1;

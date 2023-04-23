@@ -20,12 +20,7 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
             /* Probar el DAL desde aquí
              * Borrar el using DAL; cuando se termine de probar
             */
-            IdiomaBL bl = new IdiomaBL();
-            Idioma idioma = new Idioma();
-            idioma.Descripcion = "Inglés";
-
-            if (bl.IngresarIdioma(idioma))
-                MessageBox.Show("Sirve");
+            ProductoBL bl = new ProductoBL();
         }
     }
 }

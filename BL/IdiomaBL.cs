@@ -25,7 +25,11 @@ namespace BL
                 //Si este se encuentra, el valor de retorno es falso
                 descripcion = consultaIdiomas.Rows[i]["DESCRIPCION"].ToString();
                 if (descripcion.Equals(idioma.Descripcion))
+                {
                     retVal = false;
+                    //Finaliza el ciclo
+                    break;
+                }
             }
             //Si no se encontró, lo que significaría que el valor de retorno es verdadero
             //registra el dato y retorna el verdadero, si no, solo retorna el falso

@@ -1,5 +1,6 @@
 ﻿using ET;
-//using System.Data.SqlClient
+using DAL;
+
 namespace BL
 {
     public class DetalleEntradaBL

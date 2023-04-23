@@ -23,10 +23,13 @@ namespace BL
                 descripcion = listaAutores.Rows[i]["NOMBRE"].ToString();
                 //Compara nombre y apellido
                 if (autor.Nombre.Equals(descripcion))
-                    retVal = false;
-                descripcion = listaAutores.Rows[i]["APELLIDOS"].ToString();
-                if (autor.Apellidos.Equals(descripcion))
-                    retVal = false;                
+                {
+                    descripcion = listaAutores.Rows[i]["APELLIDOS"].ToString();
+                    if (autor.Apellidos.Equals(descripcion))
+                        retVal = false;
+                    //Finaliza el ciclo
+                    break;
+                }
             }
             //Si no se encontró, lo que significaría que el valor de retorno es verdadero
             //registra el dato y retorna el verdadero (a menos que exista una excepción), si no, solo retorna el falso
