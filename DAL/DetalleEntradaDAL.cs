@@ -109,5 +109,28 @@ namespace DAL
             }
             return retVal;
         }
+        public DataTable VerTodoRegistroEntradas()
+        {
+            DataTable retVal = new DataTable();
+            using (var cn = GetConnection())
+            {
+                try
+                {
+                    cn.Open();
+                    using (var cmd = new SqlCommand("SpBuscarTodoEntradas", cn))
+                    {
+                        cmd.Connection = cn;
+                        SqlDataAdapter da = new SqlDataAdapter();
+                        da.SelectCommand = cmd;
+                        da.Fill(retVal);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            return retVal;
+        }
     }
 }

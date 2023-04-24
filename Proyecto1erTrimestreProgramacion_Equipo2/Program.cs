@@ -20,15 +20,19 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
             /* Probar el DAL desde aquí
              * Borrar el using DAL; cuando se termine de probar
             */
-            Producto p = new Producto();
-            p.Descripcion = "Prod 1";
-            p.Precio = 100;
-            p.StockMinimo = 1;
-            p.StockMaximo = 100;
-            p.IdProveedor = 1;
-            p.ProductoEstudiantil = false;
-            ProductoBL bl = new ProductoBL();
-            if (bl.IngresarProducto(p))
+            DetalleEntrada d1 = new DetalleEntrada();
+            d1.IdEntrada = 3;
+            d1.Cantidad = 300;
+            d1.IdProducto = 1;
+            DetalleEntrada d2 = new DetalleEntrada();
+            d2.IdEntrada = 1;
+            d2.Cantidad = 20;
+            d2.IdProducto = 2;
+            List<DetalleEntrada> ls = new List<DetalleEntrada>();
+            ls.Add(d1);
+            ls.Add(d2);
+            DetalleEntradaBL bl = new DetalleEntradaBL();
+            if (bl.IngresarDetalleEntrada(ls, 1))
                 MessageBox.Show("Sirve");
             else
                 MessageBox.Show("No sirve");
