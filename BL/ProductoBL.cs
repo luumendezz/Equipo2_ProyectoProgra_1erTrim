@@ -45,7 +45,7 @@ namespace BL
              * un proveedor de tipo editorial
              * Gabriel J.
              */
-            bool retVal = true;
+            bool retVal = false;
             uint idCicloProv = 0;
             //Instancia el dal de proveedor y una tabla con los proveedores a analizar
             ProveedorDAL dalProv = new ProveedorDAL();
@@ -60,10 +60,9 @@ namespace BL
                 {
                     //Convierte el dato booleano de la datatable al valor de retorno
                     retVal = Convert.ToBoolean(proveedores.Rows[i]["ES_EDITORIAL"]);
-                    //Finaliza el ciclo
+                     //Finaliza el ciclo
                     break;
                 }
-                
             }
             return retVal;
         }

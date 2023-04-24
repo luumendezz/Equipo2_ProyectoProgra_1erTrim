@@ -20,7 +20,18 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
             /* Probar el DAL desde aquí
              * Borrar el using DAL; cuando se termine de probar
             */
+            Producto p = new Producto();
+            p.Descripcion = "Prod 1";
+            p.Precio = 100;
+            p.StockMinimo = 1;
+            p.StockMaximo = 100;
+            p.IdProveedor = 1;
+            p.ProductoEstudiantil = false;
             ProductoBL bl = new ProductoBL();
+            if (bl.IngresarProducto(p))
+                MessageBox.Show("Sirve");
+            else
+                MessageBox.Show("No sirve");
         }
     }
 }
