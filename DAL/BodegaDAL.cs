@@ -135,7 +135,7 @@ namespace DAL
             return retVal;
         }
         //Busca la bodega de una sucursal en específico
-        public DataTable VerBodega(int idSuc)
+        public DataTable VerBodega(int idSucursal)
         {
             DataTable retVal = new DataTable();
             using (var cn = GetConnection())
@@ -143,10 +143,10 @@ namespace DAL
                 try
                 {
                     cn.Open();
-                    using (var cmd = new SqlCommand("SpVerBodega", cn))
+                    using (var cmd = new SqlCommand("VerBodega", cn))
                     {
                         cmd.Connection = cn;
-                        cmd.Parameters.Add(new SqlParameter("@idSuc", idSuc));
+                        cmd.Parameters.Add(new SqlParameter("@idSuc", idSucursal));
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
                         da.Fill(retVal);

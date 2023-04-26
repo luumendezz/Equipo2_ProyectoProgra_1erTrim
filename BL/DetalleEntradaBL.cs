@@ -10,7 +10,7 @@ namespace BL
         public bool IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles, uint idSuc)
         {
             //Variables bandera que alojarán las cantidades máximas y mínimas, más la nueva cantidad
-            uint cantidadesMaximasProducto = 0, cantidadesMinimasProducto = 0, nuevaCantidad = 0;   
+            uint cantidadesMaximasProducto = 0, cantidadesMinimasProducto = 0, nuevaCantidad = 0;
             //Instancia del DAL de producto y una datatable con
             //un listado de productos generales
             ProductoDAL pDal = new ProductoDAL();
@@ -27,7 +27,7 @@ namespace BL
                 {
                     //Si se encuentran semejanzas, compara que se logre llenar
                     //el stock mínimo y no sobrepase el stock máximo, después finaliza el ciclo
-                    if (de.Id == Convert.ToUInt32(dtProducto.Rows[i]["ID"]))
+                    if (de.IdProducto == Convert.ToUInt32(dtProducto.Rows[i]["ID"]))
                     {
                         //Instancia una entidad bodega y se llena con los datos requeridos del objeto en lista
                         Bodega bodega = new Bodega();
