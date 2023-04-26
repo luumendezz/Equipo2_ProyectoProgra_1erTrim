@@ -9,6 +9,7 @@ namespace DAL
         public bool IngresarDetalleEntrada(List<DetalleEntrada> ListaDetalles)
         {
             bool retVal = false;
+            int ultimoIdEncabezado = this.UltimoIdEncabezado();
             /*
              * Gabriel J.
              * Recibe una lista con todos los detalles de Entrada 
@@ -33,7 +34,7 @@ namespace DAL
                              * ver metodo privado hasta abajo de la clase
                              * Gabriel J.
                              */
-                            cmd.Parameters.Add(new SqlParameter("@idEnt", this.UltimoIdEncabezado()));
+                            cmd.Parameters.Add(new SqlParameter("@idEnt", ultimoIdEncabezado));
                             cmd.Parameters.Add(new SqlParameter("@idProdu", Convert.ToInt32(de.IdProducto)));
                             cmd.Parameters.Add(new SqlParameter("@cant", Convert.ToInt32(de.Cantidad)));
                             SqlDataReader reader = cmd.ExecuteReader();
