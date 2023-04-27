@@ -45,6 +45,8 @@ namespace BL
                         //Si se cumple la condición, retorna un falso y sale del método
                         if (nuevaCantidad < cantidadesMinimasProducto || nuevaCantidad > cantidadesMaximasProducto)
                             return false;
+                        else
+                            de.Cantidad = nuevaCantidad;
                         break;
                     }
                 }
