@@ -21,37 +21,12 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
             /* Probar el DAL desde aquí
              * Borrar el using DAL; cuando se termine de probar
             */
-            Bodega b = new Bodega();
-            b.IdProducto = 1;
-            b.IdSucursal = 1;
-            int un = 1;
-            BodegaDAL bodegaDAL = new BodegaDAL();
-            ProductoDAL dal = new ProductoDAL();
-            MessageBox.Show("21");
-            DataTable dataTable = bodegaDAL.VerBodega(un);
-            MessageBox.Show(dataTable.Rows.Count + "");
-            for (int i = 0; i < dataTable.Rows.Count; i++)
-            {
-                MessageBox.Show(dataTable.Rows[i]["CANTIDAD"] + "");
-            }
-            MessageBox.Show("control2");
-            /*
-            DetalleEntrada d1 = new DetalleEntrada();
-            d1.IdEntrada = 1;
-            d1.Cantidad = 300;
-            d1.IdProducto = 1;
-            /*DetalleEntrada d2 = new DetalleEntrada();
-            d2.IdEntrada = 1;
-            d2.Cantidad = 20;
-            d2.IdProducto = 2;
-            List<DetalleEntrada> ls = new List<DetalleEntrada>();
-            ls.Add(d1);
-            DetalleEntradaBL bl = new DetalleEntradaBL();
-            if (bl.IngresarDetalleEntrada(ls, 1))
+            EmpleadoBL bl = new EmpleadoBL();
+            string ced = "119690990";
+            if (bl.BuscarEmpleado(ced).Id != 0)
                 MessageBox.Show("Sirve");
             else
                 MessageBox.Show("No sirve");
-            */
         }
     }
 }

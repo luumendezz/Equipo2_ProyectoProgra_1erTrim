@@ -132,14 +132,9 @@ namespace DAL
                     using (var cmd = new SqlCommand("SpBuscarEmpleado", cn))
                     {
                         cmd.Connection = cn;
-                        cmd.CommandType = CommandType.StoredProcedure;
-                        /*
-                         * Parámetros, revisar BD, 
-                         * Utiliza el operador LIKE para buscar coincidencias no exactas
-                         * Debe concatenarse con dos "%" a cada lado para su uso correcto
-                         */
-                        cmd.Parameters.Add(new SqlParameter("@ced", "%"+cedula+"%"));
                         SqlDataAdapter da = new SqlDataAdapter();
+                        cmd.Parameters.Add(new SqlParameter("@ced", cedula));
+                        cmd.CommandType = CommandType.StoredProcedure;
                         da.SelectCommand = cmd;
                         da.Fill(retVal);
                     }
