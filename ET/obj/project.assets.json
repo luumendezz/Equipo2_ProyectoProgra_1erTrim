@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj",
+      "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
       "projectName": "ET",
-      "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj",
+      "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
       "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\obj\\",
+      "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",

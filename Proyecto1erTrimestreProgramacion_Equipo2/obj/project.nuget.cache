@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ItaXBD0GGfcONQPjUuDiD/oS288s9CAiw2iLJ+Mz7ORyPB0qEQ0ltcS+DWVS9whYHa6Yk08+Jqq5SPlvi8ezzg==",
+  "dgSpecHash": "pVy83ZbBiJtucvafaZDRngnl1+Rb0X7dFYinemDaLs1Y2W/ghOV66d+JNAG5GlQ9WgZhGoiqZ0UnCqz9BS8xCw==",
   "success": true,
-  "projectFilePath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
+  "projectFilePath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\marti\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

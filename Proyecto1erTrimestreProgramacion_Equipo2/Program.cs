@@ -23,7 +23,7 @@ namespace Proyecto1erTrimestreProgramacion_Equipo2
             */
             EmpleadoBL bl = new EmpleadoBL();
             string ced = "119690990";
-            if (bl.BuscarEmpleado(ced).Id != 0)
+            if (bl.BuscarEmpleado(ced,"123") != 0)
                 MessageBox.Show("Sirve");
             else
                 MessageBox.Show("No sirve");

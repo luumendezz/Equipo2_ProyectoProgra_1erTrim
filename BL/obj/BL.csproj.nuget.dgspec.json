@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\BL\\BL.csproj": {}
+    "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj": {}
   },
   "projects": {
-    "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\BL\\BL.csproj": {
+    "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\BL\\BL.csproj",
+        "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj",
         "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\BL\\obj\\",
+        "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\DAL\\DAL.csproj"
+              "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj"
               },
-              "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj": {
-                "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj"
+              "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
+                "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\DAL\\DAL.csproj": {
+    "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\DAL\\obj\\",
+        "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj": {
-                "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj"
+              "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
+                "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj"
               }
             }
           }
@@ -137,14 +137,14 @@
         }
       }
     },
-    "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj": {
+    "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj",
+        "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
         "projectName": "ET",
-        "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj",
+        "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj",
         "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\obj\\",
+        "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",

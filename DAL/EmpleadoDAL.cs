@@ -121,9 +121,9 @@ namespace DAL
             }
             return retVal;
         }
-        public DataTable BuscarEmpleado(string cedula)
+        public uint BuscarEmpleado(string cedula, string contrasena)
         {
-            DataTable retVal = new DataTable();
+            uint retVal = 0;
             using (var cn = GetConnection())
             {
                 try
@@ -132,11 +132,21 @@ namespace DAL
                     using (var cmd = new SqlCommand("SpBuscarEmpleado", cn))
                     {
                         cmd.Connection = cn;
-                        SqlDataAdapter da = new SqlDataAdapter();
-                        cmd.Parameters.Add(new SqlParameter("@ced", cedula));
                         cmd.CommandType = CommandType.StoredProcedure;
-                        da.SelectCommand = cmd;
-                        da.Fill(retVal);
+                        //Se le indica que el parámetro que se recibe es un entero
+                        SqlParameter IdRol = new SqlParameter("@idRol", SqlDbType.Int);
+                        //Se le indica que la direccion del parámetro es de salida
+                        IdRol.Direction = ParameterDirection.Output;
+                        cmd.Parameters.Add(IdRol);
+                        cmd.Parameters.Add(new SqlParameter("@ced", cedula));
+                        cmd.Parameters.Add(new SqlParameter("@contra", contrasena));
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        /*Validacion
+                         * En caso de ser nulo, significa que no existe
+                         * En caso de ser algún otro numero, se parsea a un entero en retVal
+                         */
+                        if (IdRol.Value != DBNull.Value)
+                            retVal = Convert.ToUInt32(IdRol.Value);
                     }
                 }
                 catch (Exception ex)
@@ -146,5 +156,5 @@ namespace DAL
             }
             return retVal;
         }
-    }   
+    }
 }

@@ -534,11 +534,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
+      "projectUniqueName": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
+      "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\GUI.csproj",
       "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\Proyecto1erTrimestreProgramacion_Equipo2\\obj\\",
+      "outputPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\Proyecto1erTrimestreProgramacion_Equipo2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -555,11 +555,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\BL\\BL.csproj": {
-              "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\BL\\BL.csproj"
+            "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj": {
+              "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\BL\\BL.csproj"
             },
-            "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj": {
-              "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Proyecto1erTrimestreProgramacion_Equipo2\\ET\\ET.csproj"
+            "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj": {
+              "projectPath": "C:\\Archivos\\ArchivosTecnicas\\Equipo2_ProyectoProgra_1erTrim\\ET\\ET.csproj"
             }
           }
         }
