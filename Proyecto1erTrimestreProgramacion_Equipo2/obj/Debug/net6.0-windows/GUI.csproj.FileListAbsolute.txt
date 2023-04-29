@@ -88,3 +88,4 @@ C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestre
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.pdb
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
 C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\ref\GUI.dll
+C:\Archivos\ArchivosTecnicas\Equipo2_ProyectoProgra_1erTrim\Proyecto1erTrimestreProgramacion_Equipo2\obj\Debug\net6.0-windows\GUI.Principal.resources
